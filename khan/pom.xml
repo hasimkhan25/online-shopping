@@ -8,6 +8,13 @@
   <name>khan Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
+ <!-- web spring -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-webmvc</artifactId>
+    <version>5.1.5.RELEASE</version>
+</dependency>
+ 
     
     <!-- SPRING -->
 <dependency>
@@ -30,6 +37,17 @@
     </dependency>
   </dependencies>
   <build>
+  <plugins>
+  <plugin>
+  <artifactId>maven-compiler-plugin</artifactId>
+  <version>3.1</version>
+  <configuration>
+  <source>1.8</source>
+  <target>1.8</target>
+  </configuration>
+  </plugin>
+  </plugins>
+  
     <finalName>khan</finalName>
   </build>
 </project>
